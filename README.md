@@ -9,11 +9,8 @@ Compiling the Source Code
 
 
 To compile the source code, follow these steps:
-
 Make sure you have Python 3 installed on your system.
-
 Clone the repository to your local machine.
-
 Navigate to the root directory of the project.
 
 Run the following command to install any required dependencies:
