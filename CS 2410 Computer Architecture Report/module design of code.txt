@@ -1,0 +1,48 @@
+  +-----------------------------------+
+  |           RISC-V Simulator        |
+  +-----------------------------------+
+                  |
+                  v
+  +-----------------------------------+
+  |             Main Program          |
+  +-----------------------------------+
+                  |
+                  v
+  +-----------------------------------+
+  |                CPU                |
+  +-----------------------------------+
+           |             |
+           v             v
+  +----------------+  +----------------+
+  | Instruction    |  | Output Writer  |
+  |    Parser      |  |                |
+  +----------------+  +----------------+
+
+
+          Module Design: RISC-V Simulator
+
+Overview.
+The RISC-V Simulator is composed of several modules that work together to parse, execute, and simulate RISC-V assembly code. Each module has a specific responsibility and interacts with other modules as necessary to achieve the overall functionality of the simulator.
+
+Module Descriptions
+1. Main Program (simulator.py)
+Role: Entry point of the simulator, handles command line arguments, and coordinates the execution of the simulation.
+Interactions: Orchestrates interactions between the CPU, instruction parser, and output writer modules.
+2. CPU (cpu.py)
+Role: Represents the central processing unit (CPU) of the simulated RISC-V architecture. Executes instructions and manages register and memory states.
+Interactions: Interacts with the instruction parser module to fetch instructions and with the output writer module to write register values to a file.
+3. Instruction Parser (parser.py)
+Role: Parses RISC-V assembly code from input files, extracts instructions and memory contents, and prepares them for execution by the CPU.
+Interactions: Communicates with the CPU module to provide parsed instructions and memory contents for execution.
+4. Output Writer (writer.py)
+Role: Handles writing register values and other simulation outputs to files for analysis and debugging purposes.
+Interactions: Receives register values from the CPU module and writes them to an output file.
+5. Instruction Set Architecture (ISA)
+Role: Defines the supported RISC-V instructions and their corresponding binary representations, operands, and execution semantics.
+Interactions: Guides the CPU module in decoding and executing instructions correctly.
+
+Module Interactions
+The Main Program module coordinates the execution of the simulator by interacting with the CPU, Instruction Parser, and Output Writer modules.
+The CPU module interacts with the Instruction Parser to fetch instructions and memory contents for execution, as well as with the Output Writer to output register values.
+The Instruction Parser module communicates with the CPU to provide parsed instructions and memory contents.
+The Output Writer module receives register values from the CPU and writes them to an output file.
