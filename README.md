@@ -20,29 +20,26 @@ The simulator supports the following command-line parameters:
 
 input_file: Path to the input file containing the RISC-V assembly code.
 output_file: Path to the output file where the final register values will be written.
+
 Example Usage
-bash
-Copy code
 python simulator.py input_file.asm output_file.txt
+
 Replace input_file.asm with the path to your assembly code file and output_file.txt with the desired output file path.
 
 Running the Simulator
 To run the simulator, execute the following command:
 
-bash
-Copy code
 python simulator.py input_file.asm output_file.txt
+
 Example Input File
 An example input file (prog.txt) is provided in the simulator directory. This file can be used to test the simulator. Ensure your assembly code follows the syntax and format specified by the simulator.
 
 Additional Information
 The simulator supports a subset of RISC-V instructions, including addi, fld, fmul, fadd, fsd, and bne.
 Input files should follow a specific format, with memory content lines containing address-value pairs separated by a comma, and instruction lines following RISC-V assembly syntax.
-lua
-Copy code
-
-This README provides detailed instructions for compiling the source code, specifying command
               
+
+
               
               simulator_pro README
 # RISC-V Simulator README
