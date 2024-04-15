@@ -44,14 +44,7 @@ An example input file (prog.txt) is provided in the simulator directory.
 
 
 
-Additional Information
+## Additional Information
 
-
-The simulator supports a subset of RISC-V instructions, including addi, fld, fmul, fadd, fsd, and bne.
-Input files should follow a specific format, with memory content lines containing address-value pairs separated by a comma, and instruction lines following RISC-V assembly syntax.
-
-
-
-Additional Information
-The simulator supports a subset of RISC-V instructions, including addi, fld, fmul, fadd, fsd, and bne.
-Input files should follow a specific format, with memory content lines containing address-value pairs separated by a comma, and instruction lines following RISC-V assembly syntax.
+- The simulator supports a subset of RISC-V instructions, including `addi`, `fld`, `fmul`, `fadd`, `fsd`, and `bne`.
+- Input files should follow a specific format, with memory content lines containing address-value pairs separated by a comma, and instruction lines following RISC-V assembly syntax.
