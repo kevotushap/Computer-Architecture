@@ -29,11 +29,11 @@ The simulator supports the following command-line parameters:
 Example usage:
 
    ```bash
-python simulator.py input_file.asm output_file.txt
+   python simulator.py input_file.asm output_file.txt
 
 #Running the Simulator
 To run the simulator, execute the following command:
-
+    '''
 python simulator.py input_file.asm output_file.txt
 
 
