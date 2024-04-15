@@ -39,10 +39,3 @@ python simulator.py input_file.asm output_file.txt
 Example Input File
 An example input file (prog.txt) is provided in the examples directory. This file can be used to test the simulator. Ensure your assembly code follows the syntax and format specified by the simulator.
 
-
-
-Additional Information
-
-
-The simulator supports a subset of RISC-V instructions, including addi, fld, fmul, fadd, fsd, and bne.
-Input files should follow a specific format, with memory content lines containing address-value pairs separated by a comma, and instruction lines following RISC-V assembly syntax.
