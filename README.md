@@ -22,7 +22,7 @@ The simulator supports the following command-line parameters:
 - `input_file`: Path to the input file containing the RISC-V assembly code.
 - `output_file`: Path to the output file where the final register values will be written.
 
-### Example Usage
+## Example Usage
 
 ```bash
 python simulator.py input_file.asm output_file.txt
